@@ -5,7 +5,7 @@
 
 #define HCSR04_PORT    	   GPIOB
 #define HCSR04_CLK    	   RCC_APB2Periph_GPIOB
-#define HCSR04_TIM_CLK     RCC_APB1Periph_TIM4
+#define HCSR04_TIM_CLK     RCC_APB1Periph_TIM2
 #define HCSR04_TRIG   	   GPIO_Pin_7
 #define HCSR04_ECHO        GPIO_Pin_6
 
