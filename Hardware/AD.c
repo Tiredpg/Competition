@@ -5,12 +5,12 @@ void AD_Init(void){//可结合DMA多通道，单次非扫描多通道
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);//使用PA0口
 	RCC_ADCCLKConfig(RCC_PCLK2_Div6);//APB2的72M时钟选择2 4 6 8分频，输入到ADCCLK,ADCCLK=12MHZ
     GPIO_InitTypeDef GPIO_InitStructure;
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1;
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3|GPIO_Pin_4|GPIO_Pin_5|GPIO_Pin_6|GPIO_Pin_7;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AIN;//GPIO无效
 	GPIO_Init(GPIOA,&GPIO_InitStructure);
 	
-	ADC_RegularChannelConfig(ADC1, ADC_Channel_1, 1, ADC_SampleTime_55Cycles5);//填写通道菜单，多次调用写多个通道
+
     
 	ADC_InitTypeDef ADC_InitStructure;
 	ADC_InitStructure.ADC_ContinuousConvMode=DISABLE;//连续转换模式，连续/单次转换，单次转换
@@ -34,10 +34,13 @@ while(ADC_GetCalibrationStatus(ADC1)==SET);//开始校准未完成,循环等待�
 }
 
 
-uint16_t AD_GetValue(void){
+uint16_t AD_GetValue(uint8_t ADC_Channel){
+	
+ADC_RegularChannelConfig(ADC1, ADC_Channel, 1, ADC_SampleTime_55Cycles5);//填写通道菜单，多次调用写多个通道
 ADC_SoftwareStartConvCmd(ADC1, ENABLE);//软件触发转换，连续转换放在定义里面
 while(ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC)==RESET);//获取标志位，判断转换结束（EOC=1），转换未完成，等待。连续转换不需要这句
 return ADC_GetConversionValue(ADC1);//ADC获取数据寄存器
+
 }
 
 
