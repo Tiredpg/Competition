@@ -44,7 +44,7 @@ int main(void){
 		while(1){ 	
 		PWM1_SetCompare1(7200);
 		}
-		
+		123
 	}
 		  
 
