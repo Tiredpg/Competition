@@ -1,7 +1,7 @@
 .\objects\motor.o: Hardware\Motor.c
 .\objects\motor.o: .\Start\stm32f10x.h
 .\objects\motor.o: .\Start\core_cm3.h
-.\objects\motor.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\motor.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\motor.o: .\Start\system_stm32f10x.h
 .\objects\motor.o: .\User\stm32f10x_conf.h
 .\objects\motor.o: .\Library\stm32f10x_adc.h

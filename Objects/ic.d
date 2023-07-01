@@ -1,7 +1,7 @@
 .\objects\ic.o: Hardware\IC.c
 .\objects\ic.o: .\Start\stm32f10x.h
 .\objects\ic.o: .\Start\core_cm3.h
-.\objects\ic.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ic.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\ic.o: .\Start\system_stm32f10x.h
 .\objects\ic.o: .\User\stm32f10x_conf.h
 .\objects\ic.o: .\Library\stm32f10x_adc.h

@@ -1,7 +1,7 @@
 .\objects\matrix.o: Hardware\Matrix.c
 .\objects\matrix.o: .\Start\stm32f10x.h
 .\objects\matrix.o: .\Start\core_cm3.h
-.\objects\matrix.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\matrix.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\matrix.o: .\Start\system_stm32f10x.h
 .\objects\matrix.o: .\User\stm32f10x_conf.h
 .\objects\matrix.o: .\Library\stm32f10x_adc.h

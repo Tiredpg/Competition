@@ -1,7 +1,7 @@
 .\objects\hcsr04.o: Hardware\hcsr04.c
 .\objects\hcsr04.o: .\Start\stm32f10x.h
 .\objects\hcsr04.o: .\Start\core_cm3.h
-.\objects\hcsr04.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hcsr04.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\hcsr04.o: .\Start\system_stm32f10x.h
 .\objects\hcsr04.o: .\User\stm32f10x_conf.h
 .\objects\hcsr04.o: .\Library\stm32f10x_adc.h

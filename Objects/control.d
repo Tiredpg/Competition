@@ -1,7 +1,7 @@
 .\objects\control.o: Hardware\control.c
 .\objects\control.o: .\Start\stm32f10x.h
 .\objects\control.o: .\Start\core_cm3.h
-.\objects\control.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\control.o: .\Start\system_stm32f10x.h
 .\objects\control.o: .\User\stm32f10x_conf.h
 .\objects\control.o: .\Library\stm32f10x_adc.h

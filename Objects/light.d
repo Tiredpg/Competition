@@ -1,7 +1,7 @@
 .\objects\light.o: Hardware\Light.c
 .\objects\light.o: .\Start\stm32f10x.h
 .\objects\light.o: .\Start\core_cm3.h
-.\objects\light.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\light.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\light.o: .\Start\system_stm32f10x.h
 .\objects\light.o: .\User\stm32f10x_conf.h
 .\objects\light.o: .\Library\stm32f10x_adc.h
